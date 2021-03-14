@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-item {
+  flex: 50%;
+  padding: 5.5rem 0;
+}
+
+.img-section {
+  text-align: center;
+  background: rgb(36, 36, 36);
+}
+
+.main-img {
+  width: 75%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  background: rgb(36, 36, 36);
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  margin-bottom: 10rem;
+}
+.btn {
+  padding: 5rem 15rem;
+  /* margin: 3rem; */
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(45, 51, 51);
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(206, 206, 206);
+  color: #125688;
+}
+
+.social-media {
+  margin-top: 8rem;
+}
+
+.icon {
+  font-size: 15px;
+  padding: 0.5rem;
+  margin: 10px;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook-f {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(to right, #fcaf45, #e1306c, #5851db);
+  color: white;
+}
+
+.fa-envelope {
+  background: #125688;
+  color: white;
+}
