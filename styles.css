@@ -160,6 +160,12 @@ body {
   font-size: 8rem;
 }
 
+@media screen and (max-width: 700px) {
+  .soon-text {
+    font-size: 4rem;
+  }
+}
+
 .back-btn {
   text-align: center;
 }
