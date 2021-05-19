@@ -6,9 +6,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/f30cc13ab0.js"
@@ -19,41 +20,101 @@
     <title>Fernando Gamino</title>
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
   </head>
-  <body>
-    <div class="flex-container">
-      <div class="flex-item img-section">
-        <img
-          class="main-img animate-top"
-          src="/images/fernandoMain.jpg"
-          alt="Fernando with sunglasses on"
-        />
 
-        <div class="name-section">
-          <h1 class="main-name">Fernando Gamiño</h1>
-          <p class="main-title">Artistic Creative</p>
+  <body>
+    <section id="header-section">
+      <div class="main-header">
+        <h1 class="header-text animate-top">
+          Hello<br />
+          <span class="header-name">I'm Fernando</span>
+        </h1>
+      </div>
+    </section>
+    <!-- END HEADER -->
+    <!-- START ABOUT -->
+    <section id="about-section">
+      <div id="about" class="about-row">
+        <div class="about-column">
+          <img
+            class="about-img"
+            src="/images/fernandoMain.jpg"
+            alt="Fernando Gamino"
+          />
         </div>
-        <div class="social-media">
-          <a
-            href="http://Www.Fb.com/fernandogw"
-            class="fab fa-facebook-f icon"
-            target="_blank"
-          ></a>
-          <a
-            href="http://Instagram.com/fernanddo21"
-            class="fab fa-instagram icon"
-            target="_blank"
-          ></a>
-          <a href="#" class="far fa-envelope icon"></a>
+
+        <div class="about-column-text">
+          <p class="about-text">
+            <span class="big-about-text">Hello, I'm Fernando </span> some people
+            call me "Fer". I like to plant and paint. I Have a vision of peace
+            for the world.
+          </p>
         </div>
       </div>
-      <div class="flex-item info-section">
-        <div class="button-section">
-          <a class="btn plants" href="/comingSoon.html">Plants</a>
-          <a class="btn travels" href="/coming.html">Travels</a>
-          <a class="btn lifestyle" href="/soon.html">Lifestyle</a>
+    </section>
+    <!--End About -->
+    <!-- INTEREST START -->
+    <section id="interest-section">
+      <div class="project-row">
+        <div class="column">
+          <div class="card">
+            <div class="project-container">
+              <img
+                src="/images/hat.jpg"
+                alt="converse industrial equipment"
+                class="project-image"
+              />
+              <div class="project-overlay">
+                <div class="overlay-text">Follow my journey though life.</div>
+              </div>
+            </div>
+            <h3 class="card-text">Lifestyle</h3>
+            <div class="btn-container">
+              <a class="btn project-btn" href="/soon.html"> View </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="project-container">
+              <img
+                src="/images/travel.jpg"
+                alt="Image of Fernandogamino.com"
+                class="project-image"
+              />
+              <div class="project-overlay">
+                <div class="overlay-text">
+                  Follow me as i explore the world.
+                </div>
+              </div>
+            </div>
+            <h3 class="card-text">Travel</h3>
+            <div class="btn-container">
+              <a class="btn project-btn" href="/coming.html"> View </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="project-container">
+              <img src="/images/leaf.jpg" alt="" class="project-image" />
+              <div class="project-overlay">
+                <div class="overlay-text">
+                  My passion for plants is worth sticking around for.
+                </div>
+              </div>
+            </div>
+
+            <h3 class="card-text">Plants</h3>
+            <div class="btn-container">
+              <a class="btn project-btn" href="/comingSoon.html"> View </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- INTEREST END -->
     <footer>
       made by <a href="https://ricksoria.com" target="__blank">ricksoria</a>
     </footer>
