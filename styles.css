@@ -7,59 +7,60 @@ body {
   box-sizing: border-box;
   background: rgb(13, 40, 92);
 }
-
-/* Coming Soon */
-.coming-soon {
-  padding: 8rem 0;
-  background-image: url(/images/axolotl.png);
-  background-repeat: no-repeat;
-  background-position: center;
+/* START NAV */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-.coming-soon-plant {
-  padding: 8rem 0;
-  background-image: url(/images/ivy.png);
-  /* background-repeat: ; */
-  background-position: center;
-}
-.coming-soon-travel {
-  padding: 8rem 0;
-  background-image: url(/images/dotted-plane.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.soon-text {
-  text-align: center;
+.nav-text {
   color: #ddd;
-  font-family: "Roboto", sans-serif;
-  font-size: 8rem;
+  font-weight: 100;
+  font-size: 30px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
-  .soon-text {
-    font-size: 4rem;
-  }
-}
-
-.back-btn {
-  text-align: center;
-}
-.previous {
-  background-color: #f1f1f1;
-  color: black;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  padding: 12px 18px;
-  border-radius: 50%;
+  font-size: 25px;
+  color: #818181;
+  display: block;
   transition: 0.3s;
 }
 
-.previous:hover {
-  background-color: rgb(90, 90, 90);
-  color: black;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
-/* End Coming Soon */
-/* New  */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* END NAV */
+
+/* START HEADER  */
 #header-section {
-  padding: 20rem 0;
+  padding: 1rem 0 20rem 0;
   background-image: url(/images/new-bgrd.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -71,6 +72,7 @@ body {
 
 .header-text {
   font-size: 5rem;
+  margin-top: 15rem;
   font-weight: 100;
   font-family: "Exo 2", sans-serif;
   color: #ddd;
@@ -94,10 +96,14 @@ body {
 }
 @media screen and (max-width: 800px) {
   #header-section {
-    padding: 10rem 0;
+    padding: 1rem 0 10rem 0;
+  }
+  .header-text {
+    font-size: 5rem;
+    margin-top: 10rem;
   }
 }
-/* HEADER END */
+/* END HEADER */
 /* About section START */
 #about-section {
   padding: 11rem 0;
@@ -150,6 +156,42 @@ body {
   border-radius: 2rem;
   height: auto;
 }
+/* Social Media */
+  .social-media {
+  margin-top: 8rem;
+}
+
+.icon {
+  font-size: 15px;
+  padding: 0.5rem;
+  margin: 10px;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook-f {
+  background: #3b5998;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-instagram {
+  background: linear-gradient(to right, #fcaf45, #e1306c, #5851db);
+  color: white;
+  text-decoration: none;
+}
+
+.fa-envelope {
+  background: #125688;
+  color: white;
+  text-decoration: none;
+}
+/* Social Media End */
 
 @media (max-width: 700px) {
   #about-section {
@@ -362,3 +404,53 @@ footer a {
   color: rgb(42, 71, 126);
 }
 /* Footer End */
+
+/* Coming Soon */
+.coming-soon {
+  padding: 8rem 0;
+  background-image: url(/images/axolotl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.coming-soon-plant {
+  padding: 8rem 0;
+  background-image: url(/images/ivy.png);
+  /* background-repeat: ; */
+  background-position: center;
+}
+.coming-soon-travel {
+  padding: 8rem 0;
+  background-image: url(/images/dotted-plane.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.soon-text {
+  text-align: center;
+  color: #ddd;
+  font-family: "Roboto", sans-serif;
+  font-size: 8rem;
+}
+
+@media screen and (max-width: 700px) {
+  .soon-text {
+    font-size: 4rem;
+  }
+}
+
+.back-btn {
+  text-align: center;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.previous:hover {
+  background-color: rgb(90, 90, 90);
+  color: black;
+}
+/* End Coming Soon */
