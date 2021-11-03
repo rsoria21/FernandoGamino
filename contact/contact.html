@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f30cc13ab0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/contact/contact.css" />
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  </head>
+
+  <body>
+    <section id="header-section">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="/index.html">Home</a>
+        <a href="/about/about.html">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <span class="nav-text" onclick="openNav()">&#9776;</span>
+      <div class="main-header">
+        <h1 class="header-text animate-top">
+          <span class="header-name cursive-font">Contact</span>
+        </h1>
+      </div>
+    </section>
+    <!-- END HEADER -->
+    <!-- START ABOUT -->
+    <section id="about-section">
+      <div id="about" class="about-row">
+        <div class="about-column">
+          <!-- <img
+            class="about-img"
+            src="/images/fernandoMain.jpg"
+            alt="Fernando Gamino"
+          /> -->
+          <p class="contact-text">
+            Here for your bartending needs. Send me a message about your parties
+            or events, im ready to assit.
+          </p>
+          <div class="skill-logo-container">
+            <img
+              class="skill-logo"
+              src="/images/mezcal-local.png"
+              alt="HTML CSS JS Logos"
+            />
+            <img
+              class="skill-logo"
+              src="/images/don-julio-rep.png"
+              alt="Git Logo"
+            />
+            <img
+              class="skill-logo"
+              src="/images/meoet-sm.png"
+              alt="jQuery Logo"
+            />
+            <img
+              class="skill-logo"
+              src="/images/patron-rep.png"
+              alt="Github Logo"
+            />
+          </div>
+          <!-- <p class="contact-text">
+            Here for your bartending needs. Send me a message about your parties
+            or events, im ready to assit.
+          </p> -->
+        </div>
+
+        <div class="about-column-text">
+          <!-- contact for START -->
+          <div class="contact-form">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xoqyddlb"
+              method="POST"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                class="email form-control"
+              />
+              <br />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Your Name"
+                class="subject form-control"
+              />
+              <br />
+
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="4"
+                class="message form-control"
+              ></textarea>
+              <br />
+
+              <div class="status"></div>
+              <!-- <button type="submit" class="submit form-control">Send</button> -->
+              <input
+                type="submit"
+                class="form-control submit"
+                value="SEND MESSAGE"
+              />
+            </form>
+          </div>
+          <!-- contact form END -->
+        </div>
+      </div>
+    </section>
+    <!--End About -->
+
+    <!-- INTEREST END -->
+    <footer>
+      <div class="footer-nav-section">
+        <a class="footer-nav-text" href="/index.html">Home</a>
+        <a class="footer-nav-text" href="/about/about.html">About</a>
+        <a class="footer-nav-text" href="#">Services</a>
+        <a class="footer-nav-text" href="#">Contact</a>
+      </div>
+      <div class="social-media">
+        <a
+          href="http://Www.Fb.com/fernandogw"
+          class="fab fa-facebook-f icon"
+          target="_blank"
+        ></a>
+        <a
+          href="http://Instagram.com/fernanddo21"
+          class="fab fa-instagram icon"
+          target="_blank"
+        ></a>
+        <a href="/contact/contact.html" class="far fa-envelope icon"></a>
+      </div>
+      &copy;FernandoGamino 2021 made by
+      <a href="https://ricksoria.com" target="__blank">ricksoria</a>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="/contact/script.js"></script>
+  </body>
+</html>
