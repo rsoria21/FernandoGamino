@@ -5,7 +5,13 @@ body {
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  background: rgb(13, 40, 92);
+  /* text-align: center; */
+  background: rgb(55, 58, 58);
+}
+
+.cursive-font {
+  font-family: "Lobster", cursive;
+  color: rgb(244, 237, 51);
 }
 /* START NAV */
 .sidenav {
@@ -21,6 +27,7 @@ body {
   padding-top: 60px;
 }
 .nav-text {
+  padding: 20px;
   color: #ddd;
   font-weight: 100;
   font-size: 30px;
@@ -61,7 +68,7 @@ body {
 /* START HEADER  */
 #header-section {
   padding: 1rem 0 20rem 0;
-  background-image: url(/images/new-bgrd.jpg);
+  background-image: url(/images/selection.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -71,11 +78,11 @@ body {
 }
 
 .header-text {
-  font-size: 5rem;
-  margin-top: 15rem;
+  font-size: 13rem;
+  margin-top: 4rem;
   font-weight: 100;
-  font-family: "Exo 2", sans-serif;
-  color: #ddd;
+  font-family: "Lobster", cursive;
+  color: rgb(244, 237, 51);
   text-align: center;
 }
 .animate-top {
@@ -94,6 +101,12 @@ body {
     opacity: 1;
   }
 }
+@media screen and (max-width: 1100px) {
+  .header-text {
+    font-size: 8rem;
+    margin-top: 10rem;
+  }
+}
 @media screen and (max-width: 800px) {
   #header-section {
     padding: 1rem 0 10rem 0;
@@ -106,7 +119,12 @@ body {
 /* END HEADER */
 /* About section START */
 #about-section {
-  padding: 11rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 11rem 0; */
+  background-color: rgba(13, 41, 92, 0.603);
 }
 
 .about-row {
@@ -146,8 +164,10 @@ body {
   color: #ebebeb;
 }
 .big-about-text {
+  font-family: "Lobster", cursive;
   font-weight: 700;
   font-size: 2.75rem;
+  color: rgb(244, 237, 51);
 }
 
 .about-img {
@@ -175,6 +195,7 @@ body {
 }
 
 .fa-facebook-f {
+  padding: 10px 11.5px;
   background: #3b5998;
   color: white;
   text-decoration: none;
@@ -218,10 +239,152 @@ body {
 }
 
 /* end of about */
+
+/* SLIDESHOW START */
+
+.slideshow-section {
+  padding: 5rem 0;
+  background-color: rgba(13, 41, 92, 0.603);
+  text-align: center;
+}
+.skill-image {
+  width: 40%;
+  padding: 5rem;
+  border-radius: 20%;
+  /* margin: 20px; */
+  margin-bottom: 20px;
+}
+
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  #reviews {
+    padding: 1.5rem 0;
+    margin: 5rem 2rem;
+  }
+  .skill-image {
+    width: 60%;
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #c0c0c0;
+}
+
+/* Caption text */
+.text {
+  color: #ebebeb;
+  font-size: 1.5rem;
+  /* padding: 8px 12px; */
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* dots/Circles */
+.circles {
+  text-align: center;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* SLIDESHOW END */
+
 /* START INTEREST */
 #interest-section {
-  padding: 20rem 0;
-  background-image: url(/images/lines.jpg);
+  padding: 10rem 0;
+  background-image: url(/images/tallBlueAgave.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#interest-section-two {
+  padding: 13rem 0;
+  background-image: url(/images/second-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -249,8 +412,13 @@ body {
 
 .project-image {
   display: flex;
+  align-items: center;
   width: 100%;
-  height: auto;
+  /* width: 100px; */
+
+  object-fit: cover;
+  /* height: 100%; */
+  /* margin: 0 auto; */
 }
 
 .project-overlay {
@@ -299,6 +467,8 @@ body {
 .project-row {
   /* margin: 0 -5px; */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 
@@ -318,7 +488,7 @@ body {
 /* Responsive columns */
 @media screen and (max-width: 700px) {
   .column {
-    width: 25%;
+    width: 55%;
     display: block;
     margin-bottom: 20px;
   }
@@ -333,16 +503,20 @@ body {
   background-color: rgba(13, 41, 92, 0.603);
 }
 .card-text {
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
   font-weight: 300;
   font-size: 3rem;
+  /* margin: 0; */
+}
+.offer-text {
+  color: #ddd;
 }
 
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
   .project-row {
     flex-direction: column;
   }
-} */
+}
 /* project buttons */
 .btn-container {
   display: flex;
@@ -375,18 +549,21 @@ body {
     flex-direction: column;
   }
   .card-text {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
 }
 @media screen and (max-width: 700px) {
   #interest-section {
+    padding: 8rem 0;
+  }
+  #interest-section-two {
     padding: 12rem 0;
   }
   .btn-container {
     flex-direction: row;
   }
   .card-text {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
 }
 /* END INTEREST */
@@ -395,13 +572,28 @@ footer {
   text-decoration: none;
   text-align: center;
   font-size: 0.75rem;
-  color: rgb(42, 71, 126);
-  margin-bottom: 5px;
+  background-color: rgba(13, 41, 92, 0.603);
+  color: #ddd;
+  padding: 2rem 0 0 0;
 }
 
 footer a {
   text-decoration: none;
-  color: rgb(42, 71, 126);
+  color: #ddd;
+}
+
+.footer-nav-section {
+  margin-bottom: 2rem;
+}
+.footer-nav-text {
+  cursor: pointer;
+  padding: 0 0.75rem;
+}
+.footer-nav-text:hover {
+  color: rgb(14, 14, 14);
+  background-color: rgb(244, 237, 51);
+  padding: 0.55rem;
+  border-radius: 2rem;
 }
 /* Footer End */
 
