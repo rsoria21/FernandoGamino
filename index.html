@@ -9,6 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
     <script
@@ -27,12 +34,12 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <a href="#">About</a>
+        <a href="#">Home</a>
+        <a href="/about/about.html">About</a>
         <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="/contactForm/contact.html">Contact</a>
+        <a href="/contact/contact.html">Contact</a>
       </div>
-      <span class="nav-text" onclick="openNav()">&#9776; Open</span>
+      <span class="nav-text" onclick="openNav()">&#9776;</span>
       <div class="main-header">
         <h1 class="header-text animate-top">
           Hello<br />
@@ -54,29 +61,19 @@
 
         <div class="about-column-text">
           <p class="about-text">
-            <span class="big-about-text">Hello, I'm Fernando </span> a biligual
-            artistic creative.
+            <span class="big-about-text">I'm a bartender,</span> ready to assit
+            with all your bartending needs. I work well with tequila, mezcal,
+            and bubbles. Check out some of the crafty cocktails i've made.
           </p>
-          <div class="social-media">
-            <a
-              href="http://Www.Fb.com/fernandogw"
-              class="fab fa-facebook-f icon"
-              target="_blank"
-            ></a>
-            <a
-              href="http://Instagram.com/fernanddo21"
-              class="fab fa-instagram icon"
-              target="_blank"
-            ></a>
-            <a
-              href="/contactForm/contact.html"
-              class="far fa-envelope icon"
-            ></a>
+          <div class="btn-container">
+            <a class="btn project-btn" href="/about/about.html"> About </a>
+            <a class="btn project-btn" href="/contact/contact.html">
+              Contact
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!--End About -->
     <!-- INTEREST START -->
     <section id="interest-section">
       <div class="project-row">
@@ -84,17 +81,142 @@
           <div class="card">
             <div class="project-container">
               <img
-                src="/images/hat.jpg"
+                src="/images/tequila-pic.jpg"
                 alt="converse industrial equipment"
                 class="project-image"
               />
-              <div class="project-overlay">
-                <div class="overlay-text">Follow my journey though life.</div>
-              </div>
+              <!-- <div class="project-overlay">
+                  <div class="overlay-text">Follow my journey though life.</div>
+                </div> -->
             </div>
-            <h3 class="card-text">Lifestyle</h3>
-            <div class="btn-container">
+            <h3 class="card-text cursive-font">Tequila</h3>
+            <p class="offer-text">
+              Well versed in many styles of tequila, and ready to elevate your
+              knowlage and pallete.
+            </p>
+            <!-- <div class="btn-container">
               <a class="btn project-btn" href="/soon.html"> View </a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="project-container">
+              <img
+                src="/images/agave-field.jpg"
+                alt="Image of Fernandogamino.com"
+                class="project-image"
+              />
+              <!-- <div class="project-overlay">
+                  <div class="overlay-text">
+                    Follow me as i explore the world.
+                  </div>
+                </div> -->
+            </div>
+            <h3 class="card-text cursive-font">Mezcal</h3>
+            <p class="offer-text">
+              Mezcal is simailar to tequila, but the added smokey notes really
+              bring out a spirit like non other.
+            </p>
+            <!-- <div class="btn-container">
+              <a class="btn project-btn" href="/coming.html"> View </a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="project-container">
+              <img
+                src="/images/bubbles-flute.jpg"
+                alt=""
+                class="project-image"
+              />
+            </div>
+
+            <h3 class="card-text cursive-font">Bubbles</h3>
+            <p class="offer-text">
+              With a wide variety in bubbles, im well versed and ready to assit
+              with you brunch or any celebration.
+            </p>
+            <!-- <div class="btn-container">
+              <a class="btn project-btn" href="/comingSoon.html"> View </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INTEREST END -->
+
+    <!-- Slideshow Start -->
+    <section class="slideshow-section">
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="slides fade">
+          <img class="skill-image" src="/images/tequila-pic.jpg" />
+          <div class="text">Fantastic cocktail crafted by Fernando. Enjoy!</div>
+        </div>
+
+        <div class="slides fade">
+          <img class="skill-image" src="/images/tequila-pic.jpg" />
+          <div class="text">Fantastic cocktail crafted by Fernando. Enjoy!</div>
+        </div>
+
+        <div class="slides fade">
+          <img class="skill-image" src="/images/tequila-pic.jpg" />
+          <div class="text">Fantastic cocktail crafted by Fernando. Enjoy!</div>
+        </div>
+
+        <div class="slides fade">
+          <img class="skill-image" src="/images/tequila-pic.jpg" />
+          <div class="text">Fantastic cocktail crafted by Fernando. Enjoy!</div>
+        </div>
+
+        <div class="slides fade">
+          <img class="skill-image" src="/images/tequila-pic.jpg" />
+          <div class="text">Fantastic cocktail crafted by Fernando. Enjoy!</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div class="circles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </section>
+
+    <!--End Slideshow -->
+    <!-- INTEREST START -->
+    <section id="interest-section-two">
+      <div class="project-row">
+        <div class="column">
+          <div class="card">
+            <div class="project-container">
+              <img
+                src="/images/bartender-parties.jpg"
+                alt="shows peaople enjoying the drinks"
+                class="project-image"
+              />
+              <!-- <div class="project-overlay">
+                <div class="overlay-text">Follow my journey though life.</div>
+              </div> -->
+            </div>
+            <h3 class="card-text cursive-font">Parties</h3>
+            <p class="offer-text">
+              Crafy and ready to take your party to the next level? Well i'm
+              here to help elevate your party and make sure your guest enjoy
+              thier cocktails.
+            </p>
+            <div class="btn-container">
+              <a class="btn project-btn" href="#"> View </a>
             </div>
           </div>
         </div>
@@ -103,19 +225,24 @@
           <div class="card">
             <div class="project-container">
               <img
-                src="/images/travel.jpg"
-                alt="Image of Fernandogamino.com"
+                src="/images/bartneder-events.jpg"
+                alt="Ishows people atr an event"
                 class="project-image"
               />
-              <div class="project-overlay">
+              <!-- <div class="project-overlay">
                 <div class="overlay-text">
                   Follow me as i explore the world.
                 </div>
-              </div>
+              </div> -->
             </div>
-            <h3 class="card-text">Travel</h3>
+            <h3 class="card-text cursive-font">Events</h3>
+            <p class="offer-text">
+              Are you hosting a event at a particular location? Well i can
+              definetly ensure the drinks are flowing with a fresh and
+              profenional deminer.
+            </p>
             <div class="btn-container">
-              <a class="btn project-btn" href="/coming.html"> View </a>
+              <a class="btn project-btn" href="#"> View </a>
             </div>
           </div>
         </div>
@@ -123,17 +250,26 @@
         <div class="column">
           <div class="card">
             <div class="project-container">
-              <img src="/images/leaf.jpg" alt="" class="project-image" />
-              <div class="project-overlay">
+              <img
+                src="/images/bartender-personal.jpg"
+                alt="personal bartender"
+                class="project-image"
+              />
+              <!-- <div class="project-overlay">
                 <div class="overlay-text">
                   My passion for plants is worth sticking around for.
                 </div>
-              </div>
+              </div> -->
             </div>
 
-            <h3 class="card-text">Plants</h3>
+            <h3 class="card-text cursive-font">Personal</h3>
+            <p class="offer-text">
+              Love manhattens, but dont like going to the bar? I can come to you
+              and make you all your favortie cocktails. From margaritas to
+              manhattens, i can help.
+            </p>
             <div class="btn-container">
-              <a class="btn project-btn" href="/comingSoon.html"> View </a>
+              <a class="btn project-btn" href="#"> View </a>
             </div>
           </div>
         </div>
@@ -141,6 +277,25 @@
     </section>
     <!-- INTEREST END -->
     <footer>
+      <div class="footer-nav-section">
+        <a class="footer-nav-text" href="#">Home</a>
+        <a class="footer-nav-text" href="/about/about.html">About</a>
+        <a class="footer-nav-text" href="#">Services</a>
+        <a class="footer-nav-text" href="/contact/contact.html">Contact</a>
+      </div>
+      <div class="social-media">
+        <a
+          href="http://Www.Fb.com/fernandogw"
+          class="fab fa-facebook-f icon"
+          target="_blank"
+        ></a>
+        <a
+          href="http://Instagram.com/fernanddo21"
+          class="fab fa-instagram icon"
+          target="_blank"
+        ></a>
+        <a href="/contact/contact.html" class="far fa-envelope icon"></a>
+      </div>
       &copy;FernandoGamino 2021 made by
       <a href="https://ricksoria.com" target="__blank">ricksoria</a>
     </footer>
